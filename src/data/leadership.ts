@@ -1,0 +1,95 @@
+import type { Leader } from "@/types";
+
+export const leadership: Leader[] = [
+  {
+    id: "mark-orshoski",
+    name: "Mark Orshoski",
+    title: "Development, Entitlement & Senior Living",
+    shortTitle: "Development & Entitlement",
+    focus: ["Development Strategy", "Entitlements", "Senior Living", "Land Use", "Public Coordination"],
+    bio: [
+      "Mark Orshoski brings deep experience in real estate development, entitlement, and senior living across Arizona and the Southwest. His background spans land acquisition, rezoning, land use coordination, regulatory navigation, and development strategy across a range of project types.",
+      "Mark's senior living experience includes involvement with Carefree senior-living communities, Elegance Senior Living projects, and a range of condominium, residential, and commercial development initiatives. He has worked through complex entitlement processes, public coordination, and development feasibility for projects requiring multi-jurisdictional approvals.",
+      "His development work spans opportunity identification, feasibility analysis, site planning, design coordination, and execution oversight — with particular depth in senior living, active adult, and community-scale development.",
+    ],
+    platforms: ["elegance-senior-living", "transcendent-development"],
+  },
+  {
+    id: "scott-burdette",
+    name: "Scott Burdette",
+    title: "Construction Management, Owner Representation & National Commercial Experience",
+    shortTitle: "Construction Management & Owner Representation",
+    focus: [
+      "Construction Management",
+      "Owner Representation",
+      "National Commercial Development",
+      "Industrial & R&D",
+      "Hospitality & Entertainment",
+      "Active Living",
+    ],
+    bio: [
+      "Scott Burdette brings more than 27 years of construction management and development experience to Landmark Creative Group, with a documented national platform spanning commercial, industrial, R&D, hospitality, entertainment, retail, and active-living projects across 30+ states.",
+      "As a principal of Strategic Development Partners LLC, Scott has built one of the more broadly documented national commercial construction platforms in the region — spanning over 20 million square feet of delivered project experience across diverse building types and markets. SDP holds general contractor licensing in 30+ states, enabling engagement with nationally scaled clients and complex multi-site programs.",
+      "Scott's experience spans the full spectrum of owner-side and contractor-side project execution, with particular depth in procurement, contractor coordination, schedule and budget management, change management, and project closeout. His background establishes the national construction proof pillar of Landmark Creative Group.",
+    ],
+    platforms: ["strategic-development-partners"],
+  },
+  {
+    id: "mike-petersen",
+    name: 'Michael "Mike" Petersen',
+    title: "Complex Construction, Project Management & Hospitality/Commercial Execution",
+    shortTitle: "Complex Construction & Project Management",
+    focus: [
+      "Complex Construction",
+      "Project Management",
+      "Hospitality",
+      "Commercial Execution",
+      "Large-Scale Development",
+    ],
+    bio: [
+      "Mike Petersen brings more than 32 years of construction and development experience, with particular depth in complex, large-scale hospitality, entertainment, commercial, and mixed-use projects. His career has taken him through some of the most demanding construction environments in the country.",
+      "Mike's professional background includes work on major hospitality and entertainment projects through Vanguard Building Corporation LLC, as well as a range of complex commercial and mixed-use construction programs. He brings hands-on field leadership experience through all phases of construction — from preconstruction and procurement through turnover and closeout.",
+      "His experience with demanding clients, compressed schedules, and complex operational requirements positions him as a strong contributor to the project management and construction execution dimension of Landmark Creative Group.",
+    ],
+    platforms: ["vanguard-building"],
+  },
+  {
+    id: "marli-tarbaux",
+    name: "Marli Tarbaux",
+    title: "Acquisitions, Operations & Capital Strategy",
+    shortTitle: "Acquisitions & Capital Strategy",
+    focus: [
+      "Acquisitions",
+      "Capital Strategy",
+      "Operations",
+      "Investment Analysis",
+      "Partnership Structuring",
+      "Owner/Operator Perspective",
+    ],
+    bio: [
+      "Marli Tarbaux brings experience in acquisitions, operations, and capital strategy to Landmark Creative Group. Her background spans real estate investment analysis, partnership structuring, operational planning, and owner/operator coordination — establishing the acquisitions and capitalization dimension of the group.",
+      "Marli's work bridges the investment and development sides of the business — understanding both what makes an opportunity financeable and how to structure the relationships and operations that surround it. Her perspective ensures that development planning is grounded in operational and financial reality from the earliest stages.",
+      "Through Creative Roots Holdings LLC, Marli brings an owner/operator lens to project evaluation, capital strategy, and partnership development.",
+    ],
+    platforms: ["creative-roots-holdings"],
+  },
+  {
+    id: "shane-evans",
+    name: "Shane Evans",
+    title: "Strategy, Partnerships & Project Execution",
+    shortTitle: "Strategy & Partnerships",
+    focus: [
+      "Strategic Development",
+      "Partnership Development",
+      "Project Execution",
+      "Platform Integration",
+      "Business Development",
+    ],
+    bio: [
+      "Shane Evans brings experience in strategy, partnership development, and project execution to Landmark Creative Group. His background spans platform integration, business development, and the coordination of complex development relationships across multiple disciplines.",
+      "Shane's role focuses on connecting opportunity to execution — identifying development opportunities, establishing partnerships, and ensuring that the capabilities of the Landmark Creative Group leadership platform are well-positioned for each project's specific needs.",
+      "Through Creative Roots Holdings LLC, Shane is engaged in the capitalization, partnership, and strategic development dimensions that shape the group's project pipeline and market positioning.",
+    ],
+    platforms: ["creative-roots-holdings"],
+  },
+];
