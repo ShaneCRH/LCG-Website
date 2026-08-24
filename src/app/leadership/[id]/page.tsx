@@ -124,7 +124,7 @@ export default function LeaderProfilePage({ params }: Props) {
                     <p className="text-[0.6rem] tracking-tight uppercase text-graphite/50 mb-3">{project.role}</p>
                   )}
                   {project.summary && (
-                    <p className="text-xs text-graphite/60 leading-relaxed line-clamp-2">{project.summary}</p>
+                    <p className="text-xs text-graphite/60 leading-relaxed">{project.summary}</p>
                   )}
                 </div>
               ))}

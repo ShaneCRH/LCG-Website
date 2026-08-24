@@ -136,7 +136,7 @@ export default function ProjectsPage() {
                   )}
 
                   {project.summary && (
-                    <p className="text-xs text-graphite/60 leading-relaxed line-clamp-3 mb-4">
+                    <p className="text-xs text-graphite/60 leading-relaxed mb-4">
                       {project.summary}
                     </p>
                   )}
