@@ -40,10 +40,14 @@ export default function LeaderProfilePage({ params }: Props) {
           </Link>
           <div className="grid lg:grid-cols-2 gap-12 mt-6">
             <div>
-              <div className="w-20 h-20 bg-ivory/10 rounded-full flex items-center justify-center mb-8">
-                <span className="font-serif font-medium text-ivory text-2xl">
-                  {leader.name.split(" ").map((n) => n[0]).slice(0, 2).join("")}
-                </span>
+              <div className="w-32 h-32 rounded-full overflow-hidden bg-ivory/10 flex items-center justify-center mb-8 shrink-0">
+                {leader.imageUrl ? (
+                  <img src={leader.imageUrl} alt={leader.name} className="w-full h-full object-cover object-top" />
+                ) : (
+                  <span className="font-serif font-medium text-ivory text-2xl">
+                    {leader.name.split(" ").map((n) => n[0]).slice(0, 2).join("")}
+                  </span>
+                )}
               </div>
               <h1 className="font-serif text-display-md text-ivory mb-3">{leader.name}</h1>
               <p className="text-xs tracking-[0.12em] uppercase text-ivory/50 mb-6">{leader.title}</p>

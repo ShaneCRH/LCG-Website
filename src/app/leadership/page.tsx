@@ -55,10 +55,14 @@ export default function LeadershipPage() {
               >
                 {/* Name / Title Column */}
                 <div>
-                  <div className="w-16 h-16 bg-charcoal/8 rounded-full flex items-center justify-center mb-6">
-                    <span className="font-serif font-medium text-charcoal text-xl">
-                      {leader.name.split(" ").map((n) => n[0]).slice(0, 2).join("")}
-                    </span>
+                  <div className="w-24 h-24 rounded-full overflow-hidden bg-charcoal/8 flex items-center justify-center mb-6 shrink-0">
+                    {leader.imageUrl ? (
+                      <img src={leader.imageUrl} alt={leader.name} className="w-full h-full object-cover object-top" />
+                    ) : (
+                      <span className="font-serif font-medium text-charcoal text-xl">
+                        {leader.name.split(" ").map((n) => n[0]).slice(0, 2).join("")}
+                      </span>
+                    )}
                   </div>
                   <h2 className="font-serif text-display-sm text-charcoal mb-3">
                     {leader.name}

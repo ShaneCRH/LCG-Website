@@ -387,10 +387,14 @@ export default function HomePage() {
                 href={`/leadership/${leader.id}`}
                 className="group bg-ivory border border-charcoal/10 p-8 hover:border-charcoal/25 hover:shadow-md transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-charcoal focus-visible:ring-offset-2"
               >
-                <div className="w-10 h-10 bg-charcoal/8 rounded-full flex items-center justify-center mb-6 group-hover:bg-navy group-hover:text-ivory transition-colors">
-                  <span className="text-xs font-medium text-charcoal group-hover:text-ivory">
-                    {leader.name.split(" ").map((n) => n[0]).slice(0, 2).join("")}
-                  </span>
+                <div className="w-16 h-16 rounded-full overflow-hidden bg-charcoal/8 flex items-center justify-center mb-6 shrink-0">
+                  {leader.imageUrl ? (
+                    <img src={leader.imageUrl} alt={leader.name} className="w-full h-full object-cover object-top" />
+                  ) : (
+                    <span className="text-xs font-medium text-charcoal">
+                      {leader.name.split(" ").map((n) => n[0]).slice(0, 2).join("")}
+                    </span>
+                  )}
                 </div>
                 <p className="font-serif font-medium text-charcoal text-lg mb-2">{leader.name}</p>
                 <p className="text-xs tracking-[0.08em] uppercase text-graphite/55 mb-4 leading-snug">{leader.shortTitle}</p>
