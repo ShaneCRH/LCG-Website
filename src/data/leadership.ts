@@ -3,6 +3,7 @@ import type { Leader } from "@/types";
 export const leadership: Leader[] = [
   {
     id: "mark-orshoski",
+    imageUrl: "/headshots/mark-orshoski.jpg",
     name: "Mark Orshoski",
     title: "Development, Entitlement & Senior Living",
     shortTitle: "Development & Entitlement",
@@ -16,6 +17,7 @@ export const leadership: Leader[] = [
   },
   {
     id: "scott-burdette",
+    imageUrl: "/headshots/scott-burdette.jpg",
     name: "Scott Burdette",
     title: "Construction Management, Owner Representation & National Commercial Experience",
     shortTitle: "Construction Management & Owner Representation",
@@ -36,6 +38,7 @@ export const leadership: Leader[] = [
   },
   {
     id: "mike-petersen",
+    imageUrl: "/headshots/mike-petersen.jpg",
     name: 'Michael "Mike" Petersen',
     title: "Complex Construction, Project Management & Hospitality/Commercial Execution",
     shortTitle: "Complex Construction & Project Management",
@@ -55,6 +58,7 @@ export const leadership: Leader[] = [
   },
   {
     id: "marli-tarbaux",
+    imageUrl: "/headshots/marli-tarbaux.webp",
     name: "Marli Tarbaux",
     title: "Acquisitions, Operations & Capital Strategy",
     shortTitle: "Acquisitions & Capital Strategy",
@@ -75,6 +79,7 @@ export const leadership: Leader[] = [
   },
   {
     id: "shane-evans",
+    imageUrl: "/headshots/shane-evans.webp",
     name: "Shane Evans",
     title: "Strategy, Partnerships & Project Execution",
     shortTitle: "Strategy & Partnerships",
