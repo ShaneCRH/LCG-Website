@@ -389,7 +389,7 @@ export default function HomePage() {
               >
                 <div className="w-16 h-16 rounded-full overflow-hidden bg-charcoal/8 flex items-center justify-center mb-6 shrink-0">
                   {leader.imageUrl ? (
-                    <img src={leader.imageUrl} alt={leader.name} className="w-full h-full object-cover object-center" />
+                    <img src={leader.imageUrl} alt={leader.name} className={`w-full h-full object-cover ${leader.imagePosition ?? "object-center"}`} />
                   ) : (
                     <span className="text-xs font-medium text-charcoal">
                       {leader.name.split(" ").map((n) => n[0]).slice(0, 2).join("")}

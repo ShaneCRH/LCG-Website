@@ -59,6 +59,7 @@ export const leadership: Leader[] = [
   {
     id: "marli-tarbaux",
     imageUrl: "/headshots/marli-tarbaux.webp",
+    imagePosition: "object-top",
     name: "Marli Tarbaux",
     title: "M&A, Operations, Capital Strategy & Executive Leadership",
     shortTitle: "Operations & Capital Strategy",

@@ -57,6 +57,7 @@ export interface Leader {
   bio: string[];
   credentials?: string[];
   imageUrl?: string;
+  imagePosition?: string;
   platforms?: PlatformId[];
 }
 
