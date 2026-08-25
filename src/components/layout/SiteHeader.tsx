@@ -42,7 +42,7 @@ export function SiteHeader() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled || menuOpen
           ? "bg-ivory/96 backdrop-blur-sm shadow-sm border-b border-charcoal/8"
-          : "bg-gradient-to-b from-black/40 to-transparent"
+          : "bg-gradient-to-b from-black/70 via-black/40 to-transparent"
       }`}
     >
       <div className="container-site">
@@ -50,11 +50,11 @@ export function SiteHeader() {
           {/* Logo */}
           <Link href="/" className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-charcoal focus-visible:ring-offset-2 flex items-center">
             <Image
-              src="/brand/logo-stacked.png"
+              src={transparent ? "/brand/logo-horizontal-white.png" : "/brand/logo-horizontal.png"}
               alt="Landmark Creative Group LLC"
-              width={220}
-              height={60}
-              className="h-10 w-auto"
+              width={260}
+              height={160}
+              className="h-11 md:h-12 w-auto"
               priority
             />
           </Link>
@@ -72,7 +72,7 @@ export function SiteHeader() {
                   href={item.href}
                   className={`text-[0.7rem] tracking-[0.12em] uppercase font-medium transition-colors flex items-center gap-1 ${
                     transparent
-                      ? "text-ivory/80 hover:text-ivory"
+                      ? "text-white/90 hover:text-white"
                       : "text-charcoal/70 hover:text-charcoal"
                   }`}
                 >
@@ -102,7 +102,7 @@ export function SiteHeader() {
               href="/contact"
               className={`text-xs py-3 px-6 tracking-widest uppercase font-medium transition-colors border ${
                 transparent
-                  ? "border-ivory/60 text-ivory hover:bg-ivory hover:text-charcoal"
+                  ? "border-white/70 text-white hover:bg-white hover:text-charcoal"
                   : "bg-charcoal text-ivory border-charcoal hover:bg-charcoal/80"
               }`}
             >
@@ -118,9 +118,9 @@ export function SiteHeader() {
             aria-expanded={menuOpen}
           >
             <div className="w-6 flex flex-col gap-1.5">
-              <span className={`block h-px transition-all duration-200 ${transparent ? "bg-ivory" : "bg-charcoal"} ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
-              <span className={`block h-px transition-all duration-200 ${transparent ? "bg-ivory" : "bg-charcoal"} ${menuOpen ? "opacity-0" : ""}`} />
-              <span className={`block h-px transition-all duration-200 ${transparent ? "bg-ivory" : "bg-charcoal"} ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+              <span className={`block h-0.5 transition-all duration-200 ${transparent ? "bg-white" : "bg-charcoal"} ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
+              <span className={`block h-0.5 transition-all duration-200 ${transparent ? "bg-white" : "bg-charcoal"} ${menuOpen ? "opacity-0" : ""}`} />
+              <span className={`block h-0.5 transition-all duration-200 ${transparent ? "bg-white" : "bg-charcoal"} ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
             </div>
           </button>
         </div>
