@@ -32,11 +32,11 @@ export function SiteFooter() {
         <div className="grid md:grid-cols-2 gap-12 mb-16 pb-16 border-b border-ivory/10">
           <div>
             <Image
-              src="/brand/logo-horizontal.png"
+              src="/brand/logo-stacked.png"
               alt="Landmark Creative Group LLC"
-              width={200}
-              height={55}
-              className="h-9 w-auto mb-6 brightness-0 invert opacity-90"
+              width={160}
+              height={100}
+              className="h-16 w-auto mb-6 brightness-0 invert opacity-85"
             />
             <p className="text-sm text-ivory/60 leading-relaxed max-w-sm">
               Development leadership for complex projects — from opportunity and site strategy through successful delivery.

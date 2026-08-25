@@ -42,7 +42,7 @@ export function SiteHeader() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled || menuOpen
           ? "bg-ivory/96 backdrop-blur-sm shadow-sm border-b border-charcoal/8"
-          : "bg-transparent"
+          : "bg-gradient-to-b from-black/40 to-transparent"
       }`}
     >
       <div className="container-site">
@@ -50,11 +50,11 @@ export function SiteHeader() {
           {/* Logo */}
           <Link href="/" className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-charcoal focus-visible:ring-offset-2 flex items-center">
             <Image
-              src="/brand/logo-horizontal.png"
+              src="/brand/logo-stacked.png"
               alt="Landmark Creative Group LLC"
               width={220}
               height={60}
-              className={`h-10 w-auto transition-all duration-300 ${transparent ? "brightness-0 invert" : ""}`}
+              className="h-10 w-auto"
               priority
             />
           </Link>
