@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const navItems = [
   { label: "About", href: "/about" },
@@ -34,25 +35,28 @@ export function SiteHeader() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const transparent = !scrolled && !menuOpen;
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-ivory/96 backdrop-blur-sm shadow-sm border-b border-charcoal/8" : "bg-transparent"
+        scrolled || menuOpen
+          ? "bg-ivory/96 backdrop-blur-sm shadow-sm border-b border-charcoal/8"
+          : "bg-transparent"
       }`}
     >
       <div className="container-site">
         <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
-          <Link
-            href="/"
-            className="flex flex-col leading-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-charcoal focus-visible:ring-offset-2"
-          >
-            <span className="font-serif font-semibold text-charcoal tracking-tight" style={{ fontSize: "1.05rem" }}>
-              Landmark Creative Group
-            </span>
-            <span className="text-[0.6rem] tracking-[0.2em] uppercase text-graphite/60 mt-0.5">
-              LLC
-            </span>
+          <Link href="/" className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-charcoal focus-visible:ring-offset-2 flex items-center">
+            <Image
+              src="/brand/logo-horizontal.png"
+              alt="Landmark Creative Group LLC"
+              width={220}
+              height={60}
+              className={`h-10 w-auto transition-all duration-300 ${transparent ? "brightness-0 invert" : ""}`}
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -66,11 +70,15 @@ export function SiteHeader() {
               >
                 <Link
                   href={item.href}
-                  className="nav-link flex items-center gap-1"
+                  className={`text-[0.7rem] tracking-[0.12em] uppercase font-medium transition-colors flex items-center gap-1 ${
+                    transparent
+                      ? "text-ivory/80 hover:text-ivory"
+                      : "text-charcoal/70 hover:text-charcoal"
+                  }`}
                 >
                   {item.label}
                   {item.children && (
-                    <svg className="w-2.5 h-2.5 opacity-40" viewBox="0 0 10 6" fill="none">
+                    <svg className="w-2.5 h-2.5 opacity-50" viewBox="0 0 10 6" fill="none">
                       <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                     </svg>
                   )}
@@ -90,22 +98,29 @@ export function SiteHeader() {
                 )}
               </div>
             ))}
-            <Link href="/contact" className="btn-primary text-xs py-3 px-6">
+            <Link
+              href="/contact"
+              className={`text-xs py-3 px-6 tracking-widest uppercase font-medium transition-colors border ${
+                transparent
+                  ? "border-ivory/60 text-ivory hover:bg-ivory hover:text-charcoal"
+                  : "bg-charcoal text-ivory border-charcoal hover:bg-charcoal/80"
+              }`}
+            >
               Discuss a Project
             </Link>
           </nav>
 
           {/* Mobile Menu Toggle */}
           <button
-            className="lg:hidden p-2 focus-visible-ring"
+            className="lg:hidden p-2"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
           >
             <div className="w-6 flex flex-col gap-1.5">
-              <span className={`block h-px bg-charcoal transition-all duration-200 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
-              <span className={`block h-px bg-charcoal transition-all duration-200 ${menuOpen ? "opacity-0" : ""}`} />
-              <span className={`block h-px bg-charcoal transition-all duration-200 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+              <span className={`block h-px transition-all duration-200 ${transparent ? "bg-ivory" : "bg-charcoal"} ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
+              <span className={`block h-px transition-all duration-200 ${transparent ? "bg-ivory" : "bg-charcoal"} ${menuOpen ? "opacity-0" : ""}`} />
+              <span className={`block h-px transition-all duration-200 ${transparent ? "bg-ivory" : "bg-charcoal"} ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
             </div>
           </button>
         </div>

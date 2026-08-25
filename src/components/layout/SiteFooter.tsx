@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const footerNav = {
   company: [
@@ -30,10 +31,13 @@ export function SiteFooter() {
         {/* Top: Brand + CTA */}
         <div className="grid md:grid-cols-2 gap-12 mb-16 pb-16 border-b border-ivory/10">
           <div>
-            <p className="font-serif text-2xl text-ivory font-medium mb-3">
-              Landmark Creative Group
-            </p>
-            <p className="text-[0.65rem] tracking-[0.25em] uppercase text-ivory/40 mb-6">LLC</p>
+            <Image
+              src="/brand/logo-horizontal.png"
+              alt="Landmark Creative Group LLC"
+              width={200}
+              height={55}
+              className="h-9 w-auto mb-6 brightness-0 invert opacity-90"
+            />
             <p className="text-sm text-ivory/60 leading-relaxed max-w-sm">
               Development leadership for complex projects — from opportunity and site strategy through successful delivery.
             </p>
