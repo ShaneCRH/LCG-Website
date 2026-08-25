@@ -31,13 +31,15 @@ export function SiteFooter() {
         {/* Top: Brand + CTA */}
         <div className="grid md:grid-cols-2 gap-12 mb-16 pb-16 border-b border-ivory/10">
           <div>
-            <Image
-              src="/brand/logo-horizontal-white.png"
-              alt="Landmark Creative Group LLC"
-              width={220}
-              height={135}
-              className="h-11 w-auto mb-6 opacity-90"
-            />
+            <div className="bg-ivory/95 inline-block px-4 py-3 mb-6">
+              <Image
+                src="/brand/logo-horizontal.png"
+                alt="Landmark Creative Group LLC"
+                width={220}
+                height={135}
+                className="h-11 w-auto"
+              />
+            </div>
             <p className="text-sm text-ivory/60 leading-relaxed max-w-sm">
               Development leadership for complex projects — from opportunity and site strategy through successful delivery.
             </p>
