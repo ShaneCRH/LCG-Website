@@ -21,6 +21,7 @@ const navItems = [
   { label: "Projects", href: "/projects" },
   { label: "Leadership", href: "/leadership" },
   { label: "Approach", href: "/approach" },
+  { label: "Capital Partners", href: "/capital-partners" },
   { label: "Contact", href: "/contact" },
 ];
 

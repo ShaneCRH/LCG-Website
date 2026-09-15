@@ -7,6 +7,7 @@ const footerNav = {
     { label: "Our Approach", href: "/approach" },
     { label: "Leadership", href: "/leadership" },
     { label: "Companies & Platforms", href: "/leadership/platforms" },
+    { label: "Capital Partners", href: "/capital-partners" },
   ],
   capabilities: [
     { label: "Development Strategy", href: "/capabilities#development-strategy-feasibility" },
