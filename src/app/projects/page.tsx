@@ -113,6 +113,15 @@ export default function ProjectsPage() {
                 key={project.id}
                 className="border border-charcoal/10 bg-ivory hover:border-charcoal/25 hover:shadow-md transition-all duration-300"
               >
+                {project.imageUrl && (
+                  <div className="w-full h-48 overflow-hidden bg-charcoal/5">
+                    <img
+                      src={project.imageUrl}
+                      alt={project.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
                 <div className="p-6">
                   <div className="flex items-start justify-between gap-3 mb-3">
                     <h2 className="font-medium text-charcoal text-sm leading-snug">{project.name}</h2>
