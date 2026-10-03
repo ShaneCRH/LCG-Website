@@ -115,17 +115,28 @@ export default function LeaderProfilePage({ params }: Props) {
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {leaderProjects.map((project) => (
-                <div key={project.id} className="bg-ivory border border-charcoal/10 p-5">
-                  <p className="font-medium text-charcoal text-sm mb-2">{project.name}</p>
-                  {project.location && (
-                    <p className="text-xs text-graphite/45 mb-2">{project.location}</p>
+                <div key={project.id} className="bg-ivory border border-charcoal/10 overflow-hidden">
+                  {project.imageUrl && (
+                    <div className="w-full h-40 overflow-hidden bg-charcoal/5">
+                      <img
+                        src={project.imageUrl}
+                        alt={project.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   )}
-                  {project.role && (
-                    <p className="text-[0.6rem] tracking-tight uppercase text-graphite/50 mb-3">{project.role}</p>
-                  )}
-                  {project.summary && (
-                    <p className="text-xs text-graphite/60 leading-relaxed">{project.summary}</p>
-                  )}
+                  <div className="p-5">
+                    <p className="font-medium text-charcoal text-sm mb-2">{project.name}</p>
+                    {project.location && (
+                      <p className="text-xs text-graphite/45 mb-2">{project.location}</p>
+                    )}
+                    {project.role && (
+                      <p className="text-[0.6rem] tracking-tight uppercase text-graphite/50 mb-3">{project.role}</p>
+                    )}
+                    {project.summary && (
+                      <p className="text-xs text-graphite/60 leading-relaxed">{project.summary}</p>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
