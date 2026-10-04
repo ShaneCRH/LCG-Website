@@ -41,8 +41,7 @@ const sectors = [
 const proofStats = [
   { value: "20M+", label: "Square Feet", context: "SDP national commercial project experience" },
   { value: "30+", label: "States", context: "SDP general contractor licensing" },
-  { value: "27+", label: "Years", context: "Scott Burdette — construction & development" },
-  { value: "32+", label: "Years", context: "Mike Petersen — construction & development" },
+  { value: "100+", label: "Years", context: "Combined principal experience — Orshoski, Burdette & Petersen" },
 ];
 
 const lifecycle = [
@@ -211,7 +210,7 @@ export default function HomePage() {
                     {[
                       { v: "20M+", l: "Square Feet" },
                       { v: "30+", l: "States Licensed" },
-                      { v: "27+", l: "Years Experience" },
+                      { v: "100+", l: "Years Experience" },
                       { v: "6+", l: "Sectors" },
                     ].map((s) => (
                       <div key={s.l} className="border border-charcoal/12 p-4">
