@@ -19,6 +19,7 @@ export const leadership: Leader[] = [
   {
     id: "scott-burdette",
     imageUrl: "/headshots/scott-burdette.jpg",
+    imagePosition: "object-top",
     name: "Scott Burdette",
     title: "Construction Management, Owner Representation & National Commercial Experience",
     shortTitle: "Construction Management & Owner Representation",
@@ -40,6 +41,7 @@ export const leadership: Leader[] = [
   {
     id: "mike-petersen",
     imageUrl: "/headshots/mike-petersen.jpg",
+    imagePosition: "object-top",
     name: 'Michael "Mike" Petersen',
     title: "Complex Construction, Project Management & Hospitality/Commercial Execution",
     shortTitle: "Complex Construction & Project Management",
