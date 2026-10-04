@@ -4,6 +4,7 @@ export const leadership: Leader[] = [
   {
     id: "mark-orshoski",
     imageUrl: "/headshots/mark-orshoski.jpg",
+    imagePosition: "object-top",
     name: "Mark Orshoski",
     title: "Development, Entitlement & Senior Living",
     shortTitle: "Development & Entitlement",
