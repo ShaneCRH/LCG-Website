@@ -44,8 +44,6 @@ export const leadership: Leader[] = [
     id: "mike-petersen",
     imageUrl: "/headshots/mike-petersen.jpg",
     imagePosition: "object-top",
-    imageFit: "object-contain",
-    imageBackground: "#ffffff",
     name: 'Michael "Mike" Petersen',
     title: "Complex Construction, Project Management & Hospitality/Commercial Execution",
     shortTitle: "Complex Construction & Project Management",
