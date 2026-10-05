@@ -22,6 +22,7 @@ const navItems = [
   { label: "Leadership", href: "/leadership" },
   { label: "Approach", href: "/approach" },
   { label: "Capital Partners", href: "/capital-partners" },
+  { label: "News & Insights", href: "/news" },
   { label: "Contact", href: "/contact" },
 ];
 
