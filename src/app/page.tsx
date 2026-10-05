@@ -236,10 +236,10 @@ export default function HomePage() {
               </h2>
               <div className="architectural-rule mb-6" />
               <p className="prose-editorial mb-5">
-                Scott Burdette's platform, Strategic Development Partners LLC, represents one of the core proof pillars of Landmark Creative Group — a documented national commercial construction capability spanning retail, industrial, R&D, advanced manufacturing, hospitality, entertainment, active living, and care sectors.
+                Scott Burdette&apos;s platform, Strategic Development Partners LLC, represents one of the core proof pillars of Landmark Creative Group — a documented national commercial construction capability spanning retail, industrial, R&D, advanced manufacturing, hospitality, entertainment, active living, and care sectors.
               </p>
               <p className="prose-editorial mb-5">
-                SDP's documented project experience spans more than 20 million square feet across a national footprint, with general contractor licensing in 30+ states enabling engagement with nationally scaled clients and multi-site programs.
+                SDP&apos;s documented project experience spans more than 20 million square feet across a national footprint, with general contractor licensing in 30+ states enabling engagement with nationally scaled clients and multi-site programs.
               </p>
               <p className="prose-editorial mb-10">
                 This is not a regional general contractor. This is a national-scale owner-side construction platform with sector depth across industrial and R&D projects — including documented work on Rivian Automotive, Redwood EV Recycling, Nuro Robotics, Solarlink, and Multimatic R&D facilities.
@@ -271,7 +271,7 @@ export default function HomePage() {
                 Senior living development is technically complex, politically sensitive, and operationally demanding. The combination of entitlement risk, care-operator programming, specialized regulatory requirements, and operational readiness creates a development environment that rewards deep, sector-specific experience.
               </p>
               <p className="text-ivory/65 leading-relaxed mb-5" style={{ fontSize: "1.05rem" }}>
-                Mark Orshoski brings documented senior living and active adult development experience across Arizona and the Southwest — including Carefree senior living communities and Elegance Senior Living projects — complemented by SDP's documented experience in active living, retirement, and care facility construction across multiple markets.
+                Mark Orshoski brings documented senior living and active adult development experience across Arizona and the Southwest — including Carefree senior living communities and Elegance Senior Living projects — complemented by SDP&apos;s documented experience in active living, retirement, and care facility construction across multiple markets.
               </p>
               <p className="text-ivory/65 leading-relaxed mb-10" style={{ fontSize: "1.05rem" }}>
                 Landmark Creative Group approaches senior living development with the depth of teams that have navigated entitlement, design coordination, operator integration, and operational readiness on real projects.

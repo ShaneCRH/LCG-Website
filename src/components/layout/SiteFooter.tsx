@@ -122,6 +122,9 @@ export function SiteFooter() {
             <Link href="/projects" className="text-xs text-ivory/40 hover:text-ivory/60 transition-colors">
               Projects
             </Link>
+            <Link href="/news" className="text-xs text-ivory/40 hover:text-ivory/60 transition-colors">
+              News & Insights
+            </Link>
             <Link href="/contact" className="text-xs text-ivory/40 hover:text-ivory/60 transition-colors">
               Contact
             </Link>
