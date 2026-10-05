@@ -386,7 +386,7 @@ export default function HomePage() {
                 href={`/leadership/${leader.id}`}
                 className="group bg-ivory border border-charcoal/10 p-8 hover:border-charcoal/25 hover:shadow-md transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-charcoal focus-visible:ring-offset-2"
               >
-                <div className="w-16 h-16 rounded-full overflow-hidden bg-charcoal/8 flex items-center justify-center mb-6 shrink-0">
+                <div className="w-16 h-16 rounded-full overflow-hidden bg-charcoal/8 flex items-center justify-center mb-6 shrink-0" style={leader.imageBackground ? { backgroundColor: leader.imageBackground } : undefined}>
                   {leader.imageUrl ? (
                     <img src={leader.imageUrl} alt={leader.name} className={`w-full h-full ${leader.imageFit ?? "object-cover"} ${leader.imagePosition ?? "object-center"}`} />
                   ) : (

@@ -40,7 +40,7 @@ export default function LeaderProfilePage({ params }: Props) {
           </Link>
           <div className="grid lg:grid-cols-2 gap-12 mt-6">
             <div>
-              <div className="w-32 h-32 rounded-full overflow-hidden bg-ivory/10 flex items-center justify-center mb-8 shrink-0">
+              <div className="w-32 h-32 rounded-full overflow-hidden bg-ivory/10 flex items-center justify-center mb-8 shrink-0" style={leader.imageBackground ? { backgroundColor: leader.imageBackground } : undefined}>
                 {leader.imageUrl ? (
                   <img src={leader.imageUrl} alt={leader.name} className={`w-full h-full ${leader.imageFit ?? "object-cover"} ${leader.imagePosition ?? "object-center"}`} />
                 ) : (
