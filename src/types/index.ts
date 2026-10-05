@@ -59,6 +59,7 @@ export interface Leader {
   imageUrl?: string;
   imagePosition?: string;
   imageFit?: string;
+  imageBackground?: string;
   platforms?: PlatformId[];
 }
 

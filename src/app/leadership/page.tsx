@@ -55,7 +55,7 @@ export default function LeadershipPage() {
               >
                 {/* Name / Title Column */}
                 <div>
-                  <div className="w-24 h-24 rounded-full overflow-hidden bg-charcoal/8 flex items-center justify-center mb-6 shrink-0">
+                  <div className="w-24 h-24 rounded-full overflow-hidden bg-charcoal/8 flex items-center justify-center mb-6 shrink-0" style={leader.imageBackground ? { backgroundColor: leader.imageBackground } : undefined}>
                     {leader.imageUrl ? (
                       <img src={leader.imageUrl} alt={leader.name} className={`w-full h-full ${leader.imageFit ?? "object-cover"} ${leader.imagePosition ?? "object-center"}`} />
                     ) : (
