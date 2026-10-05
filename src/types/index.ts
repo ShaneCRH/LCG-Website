@@ -58,6 +58,7 @@ export interface Leader {
   credentials?: string[];
   imageUrl?: string;
   imagePosition?: string;
+  imageFit?: string;
   platforms?: PlatformId[];
 }
 
